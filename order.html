@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Первая страница</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/xml2json.js"></script>
+	<script src="js/jquery.tmpl.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/my.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+	integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="col-2 col-sm-3 px-0 d-none d-lg-inline">
+					<form>
+						<div class="input-group">
+							<input type="text" class="form-control"  placeholder="Поиск на сайте" style="border-radius: 20px 0 0 20px">
+							<div class="input-group-btn">
+								<button class="btn btn-outline-secondary" type="submit" style="background: white;
+								border-color: white; border-radius: 0 20px 20px 0;">
+									<i class="fas fa-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+
+					<div class="row no-gutters"><!--left-->
+						<div class="col-6 d-flex justify-content-end">
+							<a href="#" class="shape"><i class="fas fa-chalkboard-teacher"></i>О Компании</a>
+						</div>
+						<div class="col-6 d-flex justify-content-center">
+							<a href="#" class="shape"><i class="fas fa-baby-carriage"></i>Доставка</a>
+						</div>
+					</div>
+					 <!--left-->
+					<p class="p-left">Товары наши хороши - <br><span>развивайтесь малыши!</span></p>
+				</div>
+
+				<div class="logo col-6"> <!--centre-->
+					<img class="img-fluid img-responsive" src="images/logo.png" alt="">
+				</div>
+
+				<div class="col-lg-3 d-none d-lg-inline px-0 offset-3 offset-lg-0"><!--right-->
+					<h3><i class="fas fa-phone"></i> <span>38 (066) </span>776 5466</h3>
+					<p class="shape p-right"><i class="far fa-clock"></i>Пн-Пт:9<sup>00</sup>-20<sup>00</sup> Сб-Вс:10<sup>00</sup>-20<sup>00</sup></p>
+					<a href="#" class="call_us"><img class="img-responsive" src="images/звонок.png" alt="Обратный вызов"></a>
+				</div><!--right-->
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="top container p-0">
+			<img src="images/заказ_топ.png" alt="" class="img-responsive">
+		</div>
+		<div class="order container pl-5 pr-5">
+			<div class="row d-flex">
+				<div class="col-10 offset-1 pl-lg-5 pr-lg-5">
+					<h1 class="text-center d-none d-sm-block mb-5">Оформление<br>заказа</h1>
+					<h3 class="text-center d-block d-sm-none mb-3">Оформление<br>заказа</h3>
+					<div class="form-group pt-0 pt-lg-4">
+						<label for="fio" class="d-none d-md-block">ФИО: </label>
+						<input type="text" class="form-control" id="fio" placeholder="ФИО">
+					</div>
+
+					<div class="form-group">
+						<label for="tel" class="d-none d-md-block">Телефон: </label>
+						<input type="text" class="form-control" id="tel" placeholder="Ваш номер телефона">
+					</div>
+
+					<div class="form-group">
+						<label for="email" class="d-none d-md-block">E-mail: </label>
+						<input type="email" class="form-control" id="email" placeholder="Ваша почта">
+					</div>
+
+					<p class="pb-3">Ваш заказ:</p>
+
+					<div id="content">
+					</div>
+
+					<div class="pb-3">
+						<a href="order.html" class="basket">
+							<span>оформить заказ</span>
+						</a>
+					</div>
+
+					<p class="reg">Регистрация обязательна для следующих действий:</p>
+					<ul class="pl-3">
+						<li>активация скидочного купона</li>
+						<li>получение бонусных баллов за покупки</li>
+						<li>оплаты заказа через интернет</li>
+						<li>оформление заказа на организацию</li>
+					</ul>
+
+					<div class="form-check">
+					  	<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+					  	<label class="form-check-label" for="exampleRadios1">покупка с регистрацией</label>
+					</div>
+					<div class="form-check">
+					  	<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+					  	<label class="form-check-label" for="exampleRadios2"> вход для зарегестрированных пользователей</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bot container p-0">
+			<img src="images/заказ_бот.png" alt="" class="img-responsive">
+		</div>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-sm-6 row no-gutters">
+					<div class="col-lg-12 d-none d-lg-inline"></div>
+					<div class="col-12 pos">
+						<img src="images/двагуся.png" alt="двагуся" class="img-responsive">
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 row no-gutters">
+					<div class="col-12 d-none d-lg-inline"></div>
+					<div class="col-12">
+						<h5><i class="fas fa-phone"></i>  <span>38 (098) </span>704 1488</h5>
+					</div>
+				</div>
+				<div class="contacts col-lg-3 col-12 row no-gutters">
+					<div class="col-12 d-none d-lg-inline"></div>
+					<div class="col-12 pos">
+						<a href="https://i.pinimg.com/originals/0c/14/d1/0c14d183498185854a3cd220dd09e6d0.jpg"><i class="fab fa-twitter"></i></a>
+						<a href="https://i.pinimg.com/originals/0c/14/d1/0c14d183498185854a3cd220dd09e6d0.jpg"><i class="fab fa-vk"></i></a>
+						<a href="https://i.pinimg.com/originals/0c/14/d1/0c14d183498185854a3cd220dd09e6d0.jpg"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://i.pinimg.com/originals/0c/14/d1/0c14d183498185854a3cd220dd09e6d0.jpg"><i class="fas fa-pencil-alt"></i></a>
+						<a href="https://i.pinimg.com/originals/0c/14/d1/0c14d183498185854a3cd220dd09e6d0.jpg"><i class="fas fa-wifi"></i></a>
+						<a href="https://i.pinimg.com/originals/0c/14/d1/0c14d183498185854a3cd220dd09e6d0.jpg"><i class="fas fa-at"></i></a>
+						<a href="https://i.pinimg.com/originals/0c/14/d1/0c14d183498185854a3cd220dd09e6d0.jpg"><i class="fab fa-odnoklassniki"></i></a>
+					</div>
+					
+				</div>
+				<div class="col-lg-3 d-none d-lg-inline px-0">
+					<img class="img-responsive" src="images/гуси.png" alt="гуси">
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script id="cartTmpl", type="text/x-jquery-tmpl">
+		{{each cart}}
+			<div class="cart">
+				<div class="row">
+					<div class="col-5">
+							<p><a href="index.html#cat_id=2&id=${id}">${title}</a></p>
+					</div>
+					<div class="col-7">
+						<div class="row offset-0">
+							<div class="col-3 justify-content-center">
+								<p>${qty} шт.</p>
+							</div>
+							<div class="col-6 justify-content-end">
+								<p>${totalprice} грн.</p>
+							</div>
+							<div class="cross" data-id="${id}">
+								<span><i class="fas fa-times-circle"></i>Отмена</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{{/each}}
+	</script>
+	
+	<script>
+		new MyShop('products.xml','cart');
+	</script>
+</body>
+</html>
